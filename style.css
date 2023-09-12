@@ -178,13 +178,13 @@ h2 {
 
 
 /* MEDIA QUERIES  */
-
-@media screen and (413px < width) {
+/* min-width = à partir de */
+@media screen and (min-width:1023px) {
   .container {
-    max-width: 1110px;
+    max-width: 80vw;
   }
   .nav-grid {
-    gap: 1000px;
+    gap: 700px;
   }
   .banner {
     display: grid;
