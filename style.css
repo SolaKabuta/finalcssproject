@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Allan&family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@400;700;800&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Montserrat:wght@500;700&family=Noto+Sans+Symbols:wght@300;400;600;700&family=Open+Sans:wght@300;400;600&family=Outfit:wght@100;200;300&family=Playfair+Display:wght@500&family=Raleway:wght@400;800&family=Red+Hat+Display:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter";
+  font-weight: 400;
+  background: white;
+  color: black;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* HEADER */
+
+.container {
+  max-width: 481px;
+  min-width: 375px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.nav-grid {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  /* MAGIC TRICK WORTH REMEMBERING */
+  /* "place-items" */
+  place-items: center;
+  gap: 300px;
+}
+
+/* BANNER SECTION */
+
+h1 {
+  color: var(--Dark-Space-Blue, #00001a);
+  font-family: "Inter";
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.parag-1 {
+  color: var(--Gunmetal, #5e607a);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Inter";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px; /* 173.333% */
+  padding-bottom: 30px;
+}
+
+.bttn-1 {
+  font-weight: 700;
+  background: var(--Light-Vermillion, #f15d51);
+  padding: 15px 30px 15px 30px;
+}
+
+.bttn-1:hover {
+  background: #4858E3;
+  color: #c7f2a7;
+}
+
+.bttn-1:active {
+  background: black;
+  color: white;
+}
+
+/* MAIN */
+
+.text-block {
+  background: var(--Dark-Space-Blue, #00001a);
+  color: white;
+  margin-top: 90px;
+  padding: 30px;
+}
+
+h2 {
+  color: var(--Yellow, #e9aa52);
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  margin-bottom: 40px;
+}
+
+.headings {
+  color: var(--Almost-White, #fffdfa);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 24px; /* 120% */
+  margin-bottom: 15px;
+}
+
+.parag-2 {
+  color: var(--Silver, #c5c6ce);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 26px;
+  margin-bottom: 30px; /* 173.333% */
+}
+
+.line-1 {
+  border: 1px solid #5e607a;
+  margin-bottom: 30px;
+  width: 285px;
+}
+
+/* PRODUCT GRID */
+
+.card {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.card .numbers {
+  color: var(--Silver, #c5c6ce);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px; /* 100% */
+}
+
+.card .headings-2 {
+  color: var(--Dark-Space-Blue, #00001a);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 24px; /* 133.333% */
+}
+
+.card .parag-3 {
+  color: var(--Gunmetal, #5e607a);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 173.333% */
+}
+
+.card img {
+  aspect-ratio: 2 / 4;
+  object-fit: contain;
+}
+
+.card-text p {
+  padding-bottom: 30px;
+}
+
+/* MEDIA QUERIES TABLETS  */
+
+
+/* MEDIA QUERIES  */
+
+@media screen and (413px < width) {
+  .container {
+    max-width: 1110px;
+  }
+  .nav-grid {
+    gap: 1000px;
+  }
+  .banner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 25px;
+  }
+  .banner img {
+    height: 300px;
+    aspect-ratio: 1 / 1;
+    grid-column: 1 / span 2;
+
+  }
+  h1 {
+    padding: 0;
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 56px; /* 100% */
+  }
+  .title {
+    height: 200px;
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+  }
+  .title-text {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+  }
+  .parag-1 {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+  .bttn-1{
+    margin-top: 100px;
+  }
+  .text-block {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 2;
+    max-height: 550px;
+    margin: 0;
+  }
+  
+  .card-text {
+    padding-top: 40px;
+  }
+
+  .product-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+  }
+  
+
+  .box-1 {
+    grid-column: 1 / span 1;
+  }
+  .box-2 {
+    grid-column: 2 / span 1;
+  }
+}
