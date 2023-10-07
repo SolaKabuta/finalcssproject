@@ -74,7 +74,7 @@ h1 {
 }
 
 .bttn-1:hover {
-  background: #4858E3;
+  background: #4858e3;
   color: #c7f2a7;
 }
 
@@ -176,10 +176,9 @@ h2 {
 
 /* MEDIA QUERIES TABLETS  */
 
-
 /* MEDIA QUERIES  */
 /* min-width = à partir de */
-@media screen and (min-width:1023px) {
+@media screen and (min-width: 1023px) {
   .container {
     max-width: 80vw;
   }
@@ -196,7 +195,6 @@ h2 {
     height: 300px;
     aspect-ratio: 1 / 1;
     grid-column: 1 / span 2;
-
   }
   h1 {
     padding: 0;
@@ -218,7 +216,7 @@ h2 {
     font-weight: 400;
     line-height: 26px;
   }
-  .bttn-1{
+  .bttn-1 {
     margin-top: 100px;
   }
   .text-block {
@@ -227,7 +225,7 @@ h2 {
     max-height: 550px;
     margin: 0;
   }
-  
+
   .card-text {
     padding-top: 40px;
   }
@@ -235,9 +233,8 @@ h2 {
   .product-grid {
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
-  
 
   .box-1 {
     grid-column: 1 / span 1;
